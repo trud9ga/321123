@@ -12,7 +12,7 @@
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
 		"gulp-file-include": "latest",
-		"gulp-fonter": "latest",
+		"gulp-fonter": "^0.3.0",
 		"gulp-group-css-media-queries": "latest",
 		"gulp-imagemin": "latest",
 		"gulp-media-queries-splitter": "latest",

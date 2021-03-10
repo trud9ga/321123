@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
+@@include('_head.html',{
+"title":"Главная"
+})
 
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="fullcreen">
+				<div class='fullcreen__container _container'>
+					<div class="fullcreen__row">
+						<div class="fullcreen__column">
+							<div class="fullcreen__title _title">Scale your business with a reliable and efficient
+								IT-infrastructure
+							</div>
+							<div class="fullcreen__subtitle">
+								<p class="fullcreen__item">No downtime.</p>
+								<p class="fullcreen__item">No drawbacks.</p>
+								<p class="fullcreen__item">All autonomous.</p>
+							</div>
+							<div class="fullcreen__btn">
+								<a href="#" class="fullcreen__link _btn">Apply for free DevOps consulting</a>
+							</div>
+						</div>
+						<div class="fullcreen__column">
+							<img src="img/page1/fullcreen-1.svg" alt="" class="fullcreen__image">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>

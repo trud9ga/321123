@@ -1,3 +1,239 @@
-//====================================================================================================
+//===<--1-й блок-->=================================================================================================
+.fullcreen {
 
-//====================================================================================================
+
+		&__container {
+		}
+
+		// .fullcreen__row
+
+		&__row {
+			display: flex;
+			align-items: center;
+			height: 100vh;
+			@media (max-width:$md2+px){
+				flex-direction: column-reverse;
+				justify-content: center;
+				padding-top: 33px;
+				
+			}
+		}
+
+
+
+		&__column {
+			max-width: 400px;
+			margin-right: 200px;
+			&:last-child{
+					margin-right: 0px;
+					@media (max-width:$md2+px){
+						max-width: 100%;
+						width: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+				}
+				
+			}
+			@media (max-width:$md1+px){
+				  margin-right: 180px;
+			}
+			@media (max-width:$md2+px){
+				 margin-right: 0px;
+				 width: 100%;
+				 max-width: 1000%;
+				 padding: 0px 30px ;
+				 display: flex;
+				 flex-direction: column;
+				
+			}
+			@media (max-width:$md3+px){
+				   padding: 0px 10px ;
+			}
+		}
+
+
+
+		&__title {
+			text-transform: uppercase;
+			max-width: 400px;
+			margin-bottom: 22px;
+			@media (max-width:$md3+px){
+				 max-width: 100%; 
+				line-height: 26px;
+				
+			}
+			@media (max-width:$md2+px){
+				 align-self: center;
+			}
+			@media (max-width:$md3+px){
+				  max-width: 400px;
+				  margin-top: 20px;
+			}
+			
+		}
+
+		// .fullcreen__subtitle
+
+		&__subtitle {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width:$md2+px){
+				max-width: 100%;
+				justify-content: center;
+			}
+			@media (max-width:$md3+px){
+				 flex-wrap: wrap;
+				 justify-content: flex-start; 
+			}
+		}
+
+		// .fullcreen__item
+
+		&__item {
+				display: flex;
+				align-items: center;
+				flex: 1 1 auto;
+				font-size: 16px;
+				line-height: 30px;
+		
+			  &:nth-child(1){
+				  -webkit-animation: bounce-in-top 0.5s both;
+	        animation: bounce-in-top 0.5s both;
+			  }
+			   &:nth-child(2){
+				 -webkit-animation: bounce-in-top 0.5s both;
+	        animation: bounce-in-top 0.5s both;
+			  animation-delay: 0.3s;
+			  }
+			   &:nth-child(3){
+				-webkit-animation: bounce-in-top 0.5s both;
+	        animation: bounce-in-top 0.5s both;
+			  animation-delay: 0.6s;
+			  }
+			&::before{
+				content:url(../img/page1/fullcreen-2.svg);
+				margin-right: 8px;
+				margin-top: 2px;
+			}
+			@media (max-width:$md2+px){
+				flex: 0 0 33.3333%;
+				justify-content: center;
+			}
+			@media (max-width:$md4+px){
+				  flex: 0 0 48%;
+				  justify-content: flex-start;
+
+			}
+		}
+
+		// .fullcreen__btn
+
+		&__btn {
+			margin-top: 88px;
+			@media (max-width:$md2+px){
+				justify-content: center;
+			}
+			@media (max-width:$md3+px){
+			margin-top: 10%;
+			
+			}
+
+		}
+
+		// .fullcreen__link
+
+		&__link {
+			padding: 12px 40px;
+			background: #00A377;
+			border-radius: 100px;
+			color: white;
+			transition: all 0.3s ease 0;
+			@media (max-width:$md4+px){
+				  padding: 12px 30px;
+				  
+			}
+		}
+		&__image{
+			@media (max-width:$md2+px){		
+				height: 300px;
+			}
+			@media (max-width:$md4+px){
+				 height: 200px; 
+			}
+		}
+}
+
+
+//========================================================================================================================================================
+
+
+
+
+
+
+
+
+//========================================================================================================================================================
+
+
+
+
+
+
+
+
+//========================================================================================================================================================
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
