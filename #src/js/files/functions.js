@@ -195,12 +195,11 @@ if (spollers.length > 0) {
 				}
 				spoller.classList.toggle('_active');
 				_slideToggle(spoller.nextElementSibling);
-
 				setTimeout(function () {
 					spollersGo = true;
 				}, 500);
 			}
-		});
+		})
 	}
 }
 //=================
