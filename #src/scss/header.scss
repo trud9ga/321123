@@ -2,6 +2,7 @@
 .header {
 	position: absolute;
 	width: 100%;
+	z-index: 9;
 	@media (max-width:$md2+px){
 		position: fixed;
 	}
@@ -74,7 +75,7 @@
 				left: 0;
 				max-width: 100%;
 				overflow: hidden;
-				
+					
 				&._active{
 					 .menu__list{
 							display: flex;
@@ -86,7 +87,7 @@
 					 display: block;
 							visibility: visible;
 							top: 70px;
-							height: calc(100vh - 70px);
+							height: calc(100vh - 65px);
 							background: #E5E5E5;
 							width: 100%;
 										left: 0;
@@ -94,8 +95,10 @@
 							flex-direction: column;
 							align-items: center;
 							overflow: hidden;
+							z-index: 99;
 							~ .header__logo{
 							position: absolute;
+							z-index: 99;
 							}
 							@media (max-width:$md4+px){
 								top: 65px;  

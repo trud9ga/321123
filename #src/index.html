@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('_header.html',{})
 		<main class="page">
-			<div class="fullcreen">
+			<section class="fullcreen">
 				<div class='fullcreen__container _container'>
 					<div class="fullcreen__row">
 						<div class="fullcreen__column">
@@ -29,9 +29,24 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
+			</section>
+			<section class="partner">
+				<div class='partner__container _container'>
+					<div class="partner__row">
+						<div class="partner__column">
+							<img src="img/page1/patner-1.png" alt="" class="partner__image">
+						</div>
+						<div class="partner__column">
+							<p class="partner__info">As an AWS trusted partner we offer our clients qualified help provided by
+								Top AWS Certified Engineers. Special deals
+								from OpsWorks Co.</p>
+							<a href="" class="partner__link">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+
 		@@include('_footer.html',{})
 	</div>
 	@@include('_popup.html',{})
