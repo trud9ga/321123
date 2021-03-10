@@ -119,6 +119,7 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #E5E5E5;
 }
 
 ._container {
@@ -953,6 +954,7 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 12px;
 }
 
 .header__logo {
@@ -1047,7 +1049,7 @@ body.ie ._ibg img {
   opacity: 1;
   visibility: visible;
   position: absolute;
-  bottom: -140px;
+  bottom: -150px;
   display: none;
 }
 
@@ -1282,6 +1284,10 @@ body.ie ._ibg img {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .header__content {
+    padding-bottom: 12px;
   }
 
   .header__logo img {

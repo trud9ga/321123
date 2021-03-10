@@ -13,6 +13,10 @@
 				margin-top: 18px;
 				max-width: 100%;
 			}
+			padding-bottom: 12px;
+			@media (max-width:$md3+px){
+				 padding-bottom: 12px; 
+			}
 
 		}
 
@@ -183,7 +187,7 @@
 			opacity: 1;
 			visibility: visible;
 			position: absolute;
-			bottom: -140px;
+			bottom: -150px;
 			display: none;
 			@media (max-width:$md2+px){
 				position: inherit;
@@ -212,6 +216,7 @@
 					  top: -17px;
 					  left: 22px;
 					  position: absolute;
+					  
 					  @media (max-width:$md2+px){
 						  display: none;
 						  
