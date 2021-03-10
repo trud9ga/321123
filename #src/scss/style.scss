@@ -104,7 +104,55 @@ body {
 ._btn{
 	&:hover{
 		background: #028b67;
-		transition: all 0.3s ease 0;
+		transition: all 0.3s ease 0s;
 	}
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+._pulse{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::before{
+		content:'';
+		border-radius: 50%;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: green;
+		opacity: 0.8;
+		-webkit-animation: pulse 2.5s both infinite;
+	        animation: pulse 2.5s both  infinite;
+			  animation-delay: 1s;
+			
+	}
+}
+
+
+@-webkit-keyframes pulse {
+  0% {
+    width: 100%;
+	 height: 100%;
+	 opacity: 1;
+  }
+
+  100% {
+     width: 200%;
+	 height: 200%;
+	 opacity: 0;
+			
+  }
+}
+@keyframes pulse {
+  0% {
+    width: 100%;
+	 height: 100%;
+	 opacity: 1;
+  }
+
+  100% {
+     width: 200%;
+	 height: 200%;
+	 opacity: 0;
+  }
+}
