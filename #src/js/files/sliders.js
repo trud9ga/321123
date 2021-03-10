@@ -59,63 +59,34 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
-	observer: true,
+let slider_clients = new Swiper('.clients__row', {
 	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0,
-	autoHeight: true,
+	slidesPerView: 5,
+	spaceBetween: 30,
+	// autoHeight: true,
 	speed: 800,
-	//touchRatio: 0,
-	//simulateTouch: false,
-	//loop: true,
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
-	// Arrows
+	loop: true,
+	preloadImages: true,
+	lazy: true,
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.clients__arrow-next',
+		prevEl: '.clients__arrow-prev',
 	},
-	/*
 	breakpoints: {
+		// when window width is >= 320px
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			spaceBetween: 0
 		},
-		768: {
+		// when window width is >= 480px
+		480: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 30
 		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
+		// when window width is >= 640px
+		640: {
 			slidesPerView: 4,
-			spaceBetween: 30,
-		},
-	},
-	*/
-	on: {
-		lazyImageReady: function () {
-			ibg();
-		},
+			spaceBetween: 40
+		}
 	}
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
 });

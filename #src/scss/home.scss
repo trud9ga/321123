@@ -5,7 +5,7 @@
 		&__container {
 		}
 
-		// .fullcreen__row
+
 
 		&__row {
 			display: flex;
@@ -73,7 +73,7 @@
 			
 		}
 
-		// .fullcreen__subtitle
+
 
 		&__subtitle {
 			display: flex;
@@ -88,7 +88,7 @@
 			}
 		}
 
-		// .fullcreen__item
+	
 
 		&__item {
 				display: flex;
@@ -127,7 +127,6 @@
 			}
 		}
 
-		// .fullcreen__btn
 
 		&__btn {
 			margin-top: 88px;
@@ -141,7 +140,6 @@
 
 		}
 
-		// .fullcreen__link
 
 		&__link {
 			padding: 12px 40px;
@@ -165,11 +163,11 @@
 }
 
 
-//========================================================================================================================================================
+//====<--2-й блок-->====================================================================================================================================================
+
 
 .partner {
 background: #00A377;
-
 
 		&__container {
 			max-width: 940px;
@@ -248,16 +246,466 @@ background: #00A377;
 
 
 
+//=====<--3-й блок-->===================================================================================================================================================
+
+.pluses {
+
+		// .pluses__container
+
+		&__container {
+			margin-top: 170px;
+			@media (max-width:$md4+px){
+				padding-right: 0px;
+			}
+			@media (max-width:$md3+px){
+				 margin-top: 80px; 
+			}
+		}
+
+		// .pluses__title
+
+		&__title {
+			margin-bottom: 70px;
+			@media (max-width:$md3+px){
+				  margin-bottom: 40px;
+			}
+		}
+
+		// .pluses__row
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0px 31px ;
+			@media (max-width:$md2+px){
+				padding: 0px 0px 0px 31px;
+			}
+		}
+
+		// .pluses__column
+
+		&__column {
+			 flex: 0 0 45%;
+			display: flex;
+			padding: 35px 75px 35px 0px;
+			background: #fff;
+			margin-bottom: 30px;
+			align-items: center;
+			@media (max-width:$md2+px){
+				 flex: 1 1 100%; 
+			}
+			@media (max-width:$md4+px){
+				 padding: 16px 0px 16px 5px; 
+			}
+		}
+
+		// .pluses__image
+
+		&__image {
+			background: #00A377;
+			border-radius: 50%;
+			width: 62px;
+			height: 62px;
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			margin-left: -31px;
+			flex: 0 0 auto;
+			
+			@media (max-width:$md1+px){
+				margin-left: -31px;
+			}
+			@media (max-width:$md3+px){
+				  	width: 44px;
+			height: 44px;
+			padding: 4px;
+			}
+			img{
+				object-fit: contain;
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		// .pluses__info
+
+		&__info {
+			max-width: 280px;
+			margin-left: 42px;
+			@include adaptiv-font(18,16,18);
+			line-height: 28px;
+			font-weight: 600;
+			@media (max-width:$md3+px){
+				 line-height: 24px; 
+			}
+			@media (max-width:$md4+px){
+				  margin-left: 25px;
+				  max-width: 100%;
+			}
+		}
+}
 
 
 
 
 
+
+
+
+//====<--4-й блок-->====================================================================================================================================================
+
+
+.services {
+	position: relative;
+		// .services__container
+
+		&__container {
+			margin-top: 170px;
+			@media (max-width:$md3+px){
+				 margin-top: 80px; 
+			}
+		}
+
+		// .services__title
+
+		&__title {
+			margin-bottom: 50px;
+			@media (max-width:$md3+px){
+				  margin-bottom: 40px;
+			}
+			
+		}
+
+		// .services__row
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		// .services__column
+
+		&__column {
+			flex: 0 0 48%;
+			margin-bottom: 70px;
+			@media (max-width:$md3+px){
+				  flex: 0 0 100%;
+			}
+			@media (max-width:$md3+px){
+				 margin-bottom: 40px; 
+			}
+			&:hover{
+				.services__subtitle{
+					&::before{
+						width: 100%;
+					}
+				}		
+			}
+		}
+
+		// .services__subtitle
+
+		&__subtitle {
+			font-family: Harabara Manis Demo;
+			font-weight: 400;
+			@include adaptiv-font(22,18,22);
+			padding-bottom: 18px;
+			position: relative;
+			z-index: 3;
+			&::before{
+				content:'';
+				width: 50%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: #000;
+				height: 4px;
+				border-radius: 100px;
+				transition: all 0.3s ease 0s;
+			}
+			
+		}
+
+		// .services__info
+
+		&__info {
+			margin-top: 18px;
+			color: #848484;
+			@include adaptiv-font(16,14,16);
+			line-height: 28px;
+			z-index: 3;
+			position: relative;
+			@media (max-width:$md3+px){
+				 line-height: 24px; 
+			}
+		}
+
+		// .services__pulse
+
+		&__pulse {
+			position: absolute;
+			right: 0;
+			top: 0;
+			._pulse{
+				position: relative;
+			width: 150px;
+			height: 150px;
+			background: #00A377;
+			border-radius: 50%;
+			left: calc(100% - 75px);
+			top: 0px;
+			&::before{
+					-webkit-animation: pulse-big 5s both infinite;
+	      	  animation: pulse-big 5s both  infinite;
+				  animation-delay: 5s;				
+			}
+
+			}
+			@media (max-width:$md1+px){
+				  width: 100px;
+				height: 100px;
+				top: 0;
+			}
+			@media (max-width:$md2+px){
+				display: none;
+			}
+		}
+}
+
+
+		// ._line-1
+
+		._line-1 {
+			&::before{
+				background: #00A377;
+				
+			}
+		}
+
+		// ._line-2
+
+		._line-2 {
+			&::before{
+				background: #E74545;
+				
+			}
+		}
+
+		// ._line-3
+
+		._line-3 {
+			&::before{
+				background: #FAC000;
+				
+			}
+		}
+
+		// ._line-4
+
+		._line-4 {
+			&::before{
+				background: #00A0C1;
+				
+			}
+		}
+
+//====<--5-й блок -->====================================================================================================================================================
+
+
+.benefits {
+	position: relative;
+		// .benefits__container
+
+		&__container {
+			margin-top: 170px;
+			@media (max-width:$md3+px){
+				margin-top: 80px;
+			}
+		}
+
+		// .benefits__title
+
+		&__title {
+			z-index: 2;
+			position: relative;
+		}
+
+		// .benefits__row
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 60%;
+			justify-content: center;
+			padding-top: 60px;
+			&::before{
+				content:'';
+				z-index: 1;
+				position: absolute;
+				background: #00A377;
+				width: 60%;
+				height: 85%;
+				bottom: 0;
+				left: 0;
+				@media (max-width:$md3+px){
+					  width: 100%;
+				}
+			}
+			@media (max-width:$md3+px){
+				 max-width: 100%; 
+				 justify-content: space-between;
+			}
+		}
+
+		// .benefits__column
+
+		&__column {
+			z-index: 2;
+			display: flex;
+			flex: 0 0 45%;
+			align-items: center;
+			margin-bottom: 60px;
+			
+		}
+
+		// .benefits__img
+
+		&__img {
+			margin-right: 35px;
+			flex: 0 0 10%;
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			@media (max-width:$md3+px){
+				 margin-right: 10px; 
+			}
+		}
+
+		// .benefits__info
+
+		&__info {
+		
+			color: white;
+			@include adaptiv-font(18,16,1);
+			line-height: 28px;
+			@media (max-width:$md3+px){
+				 line-height: 20px; 
+			
+			}
+
+		}
+
+		// .benefits__image-big
+
+		&__image-big {
+			position: absolute;
+			bottom: 0;
+				right: 0;
+				@media (max-width:$md3+px){
+					 display: none; 
+				}
+		}
+}
 //========================================================================================================================================================
 
 
+.clients {
+
+		// .clients__container
+
+		&__container {
+			position: relative;
+			margin-top: 170px;
+			margin-bottom: 100px;
+			@media (max-width:$md3+px){
+				 margin-top: 80px; 
+			}
+		}
+
+		// .clients__title
+
+		&__title {
+			margin-bottom: 10px;
+		}
+
+		// .clients__row
+
+		&__row {
+			display: flex;
+			position: relative;
+			margin-top: 60px;
+			@media (max-width:$md3+px){
+				  margin-top: 40px;
+			}
+			@media (max-width:$md4+px){
+				 justify-content: center;
+				 align-items: center; 
+			}
+		}
 
 
+
+		&__column {
+
+		}
+}
+
+.subtitle {
+		@include adaptiv-font(16,14,1);
+			line-height: 28px;
+			color: #4F4F4F ;
+			@media (max-width:$md3+px){
+				 line-height: 20px; 
+			}
+}
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media (max-width:$md4+px){
+		 max-height: 200px; 
+	}
+
+	img{
+	max-width: 100%;
+		object-fit: contain;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	 &:hover{
+		 -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  	  filter: grayscale(0%);
+		 transition: all 0.3s ease 0s;
+	 }
+		@media (max-width:$md3+px){
+				max-width: 100%;
+				max-height: 100%;
+		}
+		@media (max-width:$md4+px){
+				max-width: 100%;
+				max-height: 100%;
+		}
+ 	}
+	}
+	
+
+.clients__arrow-prev {
+	position: absolute;
+	bottom: 35px;
+	left: -20px;
+@media (max-width:$md1+px){
+	  bottom: 30px;
+}
+}
+.clients__arrow-next{
+	position: absolute;
+	bottom: 35px;
+	right: -20px;
+	@media (max-width:$md1+px){
+ bottom: 30px;
+}
+}
 
 
 
