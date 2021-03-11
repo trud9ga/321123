@@ -90,3 +90,20 @@ let slider_clients = new Swiper('.clients__row', {
 		}
 	}
 });
+
+
+let slider_reviews = new Swiper('.reviews__row', {
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 30,
+	autoHeight: true,
+	speed: 800,
+	loop: true,
+	preloadImages: true,
+	lazy: true,
+	navigation: {
+		nextEl: '.reviews__arrow-next',
+		prevEl: '.reviews__arrow-prev',
+	},
+
+});
