@@ -2831,6 +2831,74 @@ body.ie ._ibg img {
           box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
 }
 
+.case__title {
+  margin-bottom: 10px;
+}
+
+.case__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.case__column {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+  margin: 0px 0px 50px 0px;
+}
+
+.case__img {
+  max-width: 100%;
+}
+
+.case__img img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+}
+
+.case__content {
+  background: #fff;
+  padding: 20px 0px 12px 18px;
+  max-width: 90%;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+}
+
+.case__date {
+  color: #878787;
+  margin-bottom: 10px;
+}
+
+.case__content-title {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  margin-bottom: 10px;
+}
+
+.case__info {
+  font-size: 13px;
+  line-height: 20px !important;
+  font-weight: 400;
+  color: #a0a0a0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-clamp: 5;
+  box-orient: vertical;
+  overflow: hidden;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -3005,6 +3073,10 @@ body.ie ._ibg img {
   position: absolute;
   top: 40%;
   left: 30%;
+}
+
+.pagination {
+  margin-bottom: 50px;
 }
 
 ._pagination-dots {
@@ -3672,6 +3744,12 @@ body.ie ._ibg img {
     padding: 40px 60px;
   }
 
+  .case__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
+
   .breadcrumbs {
     margin: 70px 0 30px 0;
   }
@@ -3933,6 +4011,19 @@ body.ie ._ibg img {
 
   .reviews__arrow-next {
     display: none;
+  }
+
+  .case__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .case__img {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
   }
 
   .page {

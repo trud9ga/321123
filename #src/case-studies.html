@@ -1,17 +1,114 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
+@@include('_head.html',{
+"title":"Case Studies"
+})
 
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
-</html> -->
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="case">
+				<div class='case__container _container'>
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="index.html" class="breadcrumbs__link">Home</a>
+							</li>
+							<li>
+								<span class="breadcrumbs__item">Case Studies</span>
+							</li>
+						</ul>
+					</nav>
+					<div class="case__title _title">Top case studies</div>
+					<div class="case__subtitle">Тут надо написать короткий подзаголовок</div>
+					<div class="case__row">
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/01.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds...</div>
+							</div>
+						</div>
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/02.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds. It allows the automation of complex,
+									quantitative trading strategies in Equity, Forex, and Derivative markets.</div>
+							</div>
+						</div>
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/03.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds...</div>
+							</div>
+						</div>
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/03.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds...</div>
+							</div>
+						</div>
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/04.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds...</div>
+							</div>
+						</div>
+						<div class="case__column">
+							<div class="case__img"><img src="img/case-studies/01.jpg" alt=""></div>
+							<div class="case__content">
+								<div class="case__date _date">06 may 2020</div>
+								<div class="case__content-title _title">Predictable Infrastructure</div>
+								<div class="case__info">AlgoTrader is an algorithmic trading software system for quantitative
+									hedge funds...</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<div class='pagination__container _container'>
+					<div class="pagination__row">
+						<div class="pagination__column">
+							<div class="pagination__item _pagination"><a href="#">1</a></div>
+							<div class="pagination__item _pagination _active"><a href="#">2</a></div>
+							<div class="pagination__item _pagination"><a href="#">3</a></div>
+							<div class="pagination__item _pagination-dots"><a href="">...</a></div>
+							<div class="pagination__item _pagination _hidden"><a href="#">4</a></div>
+							<div class="pagination__item _pagination _hidden"><a href="#">5</a></div>
+							<div class="pagination__item _pagination _hidden"><a href="#">6</a></div>
+							<div class="pagination__item _pagination _hidden"><a href="#">7</a></div>
+						</div>
+						<div class="pagination__lust _pagination">
+							<a href="#">8</a>
+						</div>
+						<div class="pagination__arrow _pagination">
+							<a href=""><img src="img/icons/bread-arrow.svg" alt=""></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
