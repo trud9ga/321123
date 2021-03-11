@@ -1417,24 +1417,6 @@ body.ie ._ibg img {
 .partner__link {
   padding-top: 25px;
   color: #fff;
-  position: relative;
-}
-
-.partner__link::after {
-  content: url(../img/page1/partner-arrow.svg);
-  position: absolute;
-  right: -25px;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.partner__link:hover:after {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  right: -30px;
 }
 
 .pluses__container {
@@ -1916,6 +1898,204 @@ body.ie ._ibg img {
   margin-bottom: 130px;
 }
 
+.tags__title {
+  margin-bottom: 30px;
+}
+
+.options {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.options__text {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: white;
+  padding: 11px 19px;
+  z-index: 2;
+}
+
+.options__text::before {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 163, 119, 0.05);
+  border: none !important;
+  border-radius: 100px;
+  z-index: -1;
+  top: 0;
+  position: absolute;
+}
+
+.options__text::after {
+  width: 100%;
+  height: 100%;
+  background: #00A377;
+  border: none !important;
+  border-radius: 100px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.cards__container {
+  margin-top: 40px;
+}
+
+.cards__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
+          box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
+  margin-bottom: 50px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.cards__column:hover {
+  background: #00A377;
+  color: #fff;
+}
+
+.cards__column:hover .cards__link a {
+  color: #fff;
+}
+
+.cards__column:hover .cards__link a::after {
+  content: url(../img/page1/partner-arrow.svg);
+}
+
+.cards__column:hover .cards__title a {
+  color: #fff;
+}
+
+.cards__column:hover .cards__date::before {
+  content: url(../img/icons/date-hover.svg);
+}
+
+.cards__column:hover .cards__tag {
+  border: 1px solid #fff;
+}
+
+.cards__column:hover .cards__text {
+  color: #fff;
+}
+
+.cards__image {
+  width: 100%;
+}
+
+.cards__image img {
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards__content {
+  padding: 20px 18px 35px 20px;
+}
+
+.cards__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards__text {
+  color: #343434;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-top: 20px;
+  padding-right: 25px;
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
+.cards__title a {
+  font-size: 22px;
+  line-height: 32px;
+  color: #000;
+}
+
+.cards__link {
+  margin-top: 30px;
+}
+
+.cards__link a {
+  color: #00A377;
+}
+
+.cards__link a::after {
+  content: url(../img/icons/link-arr-gr.svg);
+}
+
+.pagination {
+  margin-bottom: 20px;
+}
+
+.pagination__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 266px;
+}
+
+.pagination__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 170px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.pagination__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.pagination__lust {
+  margin-left: 5px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1979,6 +2159,133 @@ body.ie ._ibg img {
 .breadcrumbs__link::after {
   content: url(../img/icons/bread-arrow.svg);
   margin: 0 12px;
+}
+
+._link {
+  position: relative;
+}
+
+._link::after {
+  content: url(../img/page1/partner-arrow.svg);
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+._link:hover:after {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  right: -30px;
+}
+
+._tag {
+  background: #00A377;
+  border: 1px solid #00A377;
+  color: white;
+  padding: 6px 11px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: default;
+}
+
+._tag:hover {
+  background: #fff;
+  color: #00A377;
+}
+
+._date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._date::before {
+  content: url(../img/icons/date.svg);
+  margin-right: 8px;
+}
+
+._pagination {
+  margin-right: 5px;
+  max-width: 43px;
+  max-height: 43px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #A0A0A0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+._pagination._active {
+  border: 1px solid #00A377;
+  background: #00A377;
+}
+
+._pagination._active a {
+  color: #fff;
+}
+
+._pagination:hover {
+  border: 1px solid #00A377;
+  background: #00A377;
+}
+
+._pagination:hover a {
+  color: #fff;
+}
+
+._pagination:hover a img {
+  content: url(../img/icons/bread-arrow-white.svg);
+}
+
+._pagination a {
+  padding: 20px 20px;
+  position: relative;
+  color: #A0A0A0;
+}
+
+._pagination a img {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+._pagination-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+._pagination-dots a {
+  color: #A0A0A0;
+}
+
+._hidden {
+  display: none;
 }
 
 ._pulse {
@@ -2351,7 +2658,6 @@ body.ie ._ibg img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 33px;
   }
 
   .fullcreen__column:last-child {
@@ -2405,9 +2711,9 @@ body.ie ._ibg img {
   }
 
   .fullcreen__btn {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .fullcreen__image {
@@ -2438,6 +2744,33 @@ body.ie ._ibg img {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     margin-bottom: 65px;
+  }
+
+  .options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .options__item {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+
+  .cards__container {
+    margin-top: 40px;
+  }
+
+  .cards__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
+
+  .breadcrumbs {
+    margin: 70px 0 30px 0;
   }
 }
 
@@ -2639,6 +2972,10 @@ body.ie ._ibg img {
     max-width: 100%;
     max-height: 100%;
   }
+
+  .page {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -2717,5 +3054,11 @@ body.ie ._ibg img {
   .swiper-slide img {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .cards__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }

@@ -14,7 +14,7 @@
 			@media (max-width:$md2+px){
 				flex-direction: column-reverse;
 				justify-content: center;
-				padding-top: 33px;
+			
 				
 			}
 		}
@@ -131,11 +131,10 @@
 		&__btn {
 			margin-top: 88px;
 			@media (max-width:$md2+px){
-				justify-content: center;
+				align-self: center;
 			}
 			@media (max-width:$md3+px){
 			margin-top: 10%;
-			
 			}
 
 		}
@@ -223,24 +222,11 @@ background: #00A377;
 		
 			padding-top: 25px;
 			color: #fff;
-			position: relative;
-	
+
 			@media (max-width:$md3+px){
 				 margin-top: 20px; 
 			}
-			&::after{
-				content:url(../img/page1/partner-arrow.svg);
-				position: absolute;
-				right: -25px;
-					bottom: 0;
-					transition: all 0.3s ease 0s;
-			}
-			&:hover{
-				&:after{
-					transition: all 0.3s ease 0s;
-					right: -30px;
-				}
-			}
+
 		}
 }
 

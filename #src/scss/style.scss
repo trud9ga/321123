@@ -86,12 +86,16 @@ body {
 @import "footer";
 @import "home";
 @import "how-we-work";
+@import "blog";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
 	flex: 1 1 auto;
-	padding-top: 71px
+	padding-top: 71px;
+	@media (max-width:$md3+px){
+		padding-top: 20px;  
+	}
 }
 //===================================================================================================================================
 
@@ -149,11 +153,111 @@ body {
 				margin:0 12px;
 			}
 		}
+		@media (max-width:$md2+px){
+			margin:70px 0 30px 0 ;
+		}
+}
 
+._link{
+	position: relative;
+				&::after{
+				content:url(../img/page1/partner-arrow.svg);
+				position: absolute;
+				right: -25px;
+					bottom: 0;
+					transition: all 0.3s ease 0s;
+			}
+			&:hover{
+				&:after{
+					transition: all 0.3s ease 0s;
+					right: -30px;
+				}
+			}
+}
+
+._tag{
+	background: #00A377;
+	border: 1px solid #00A377;
+	color: white;
+	padding: 6px 11px;
+	border-radius: 100px;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 10px;
+	transition: all 0.3s ease 0s;
+	cursor: default;
+	&:hover{
+		background: #fff;
+		color: #00A377;
+	}
+}
+
+._date{
+	display: flex;
+	align-items: center;
+	&::before{
+		content:url(../img/icons/date.svg);
+		margin-right: 8px;
+	}
 }
 
 
+._pagination{
+	margin-right: 5px;
+	max-width: 43px;
+	max-height: 43px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid#A0A0A0;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+	&._active{
+				border: 1px solid#00A377;
+		background: #00A377;
+		
+		a{
+			color: #fff;
 
+		}
+	}
+	&:hover{
+		border: 1px solid#00A377;
+		background: #00A377;
+		
+		a{
+			color: #fff;
+			img{
+			content: url(../img/icons/bread-arrow-white.svg);
+			}
+		}
+	}
+	a{
+		padding: 20px 20px;
+		position: relative;
+		color: #A0A0A0;
+		img{
+			position: absolute;
+			top: 40%;
+			left: 30%;
+			
+		}
+	}
+}
+
+._pagination-dots{
+	display: flex;
+	align-items: flex-end;
+	
+	a{
+		color: #A0A0A0;;
+	}
+}
+
+._hidden{
+	display: none;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 ._pulse{
 	position: relative;

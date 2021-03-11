@@ -1,0 +1,291 @@
+.tags {
+	
+		// .tags__container
+
+		&__container {
+		}
+
+		// .tags__title
+
+		&__title {
+			margin-bottom: 30px;
+		}
+
+		// .tags__row
+
+		&__row {
+		}
+
+		// .tags__column
+
+		&__column {
+		}
+}
+
+.breadcrumbs {
+
+		// .breadcrumbs__list
+
+		&__list {
+		}
+
+		// .breadcrumbs__link
+
+		&__link {
+		}
+
+		// .breadcrumbs__item
+
+		&__item {
+		}
+}
+
+
+.options {
+
+	justify-content: space-between;
+	width: 100%;
+	flex-direction: row;
+	@media (max-width:$md2+px){
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+		// .options__item
+
+		&__item {
+			@media (max-width:$md2+px){
+				margin-bottom: 10px;
+				margin-right: 5px;
+			}
+		}
+
+		// .options__input
+
+		&__input {
+
+		
+			}
+		
+
+		// .options__text
+
+		&__text {
+			display: block;
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: 700;
+			color: white;
+			padding: 11px 19px;
+			z-index: 2;
+			&::before{
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 163, 119, 0.05);;
+				border: none !important;
+				border-radius: 100px;
+				z-index: -1;
+				top: 0;
+				position: absolute;
+			}
+			&::after{
+				width: 100%;
+				height: 100%;
+				background: #00A377;
+				border: none !important;
+				border-radius: 100px;
+				z-index: -1;
+				top: 0;
+				left: 0;
+			}
+		}
+}
+
+//========================================================================================================================================================
+
+
+.cards {
+
+		// .cards__container
+
+		&__container {
+			margin-top: 40px;
+			@media (max-width:$md2+px){
+				margin-top: 40px;
+			}
+		}
+
+		// .cards__row
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		// .cards__column
+
+		&__column {
+			flex: 0 0 32%;
+			background: #fff;
+			box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
+			margin-bottom: 50px;
+			transition: all 0.5s ease 0s;
+			@media (max-width:$md2+px){
+				flex: 0 0 48%;
+			}
+			@media (max-width:$md4+px){
+				  flex: 0 0 100%;
+			}
+			&:hover{
+				background: #00A377;
+				color: #fff;
+				.cards__link{
+					a{
+						color: #fff;
+						&::after{
+							content:url(../img/page1/partner-arrow.svg);
+							
+						}
+					}
+				}
+				.cards__title{
+					a{
+						color: #fff;
+					}
+				}
+				.cards__date{
+					&::before{
+						content:url(../img/icons/date-hover.svg);
+						
+					}
+				}
+				.cards__tag{
+					border: 1px solid #fff;
+				}
+				.cards__text{
+					color: #fff;
+				}
+			}
+		}
+
+		// .cards__image
+
+		&__image {
+			width: 100%;
+			img{
+				max-width: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		// .cards__info
+
+
+		&__content{
+			padding: 20px 18px 35px 20px;
+		}
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		// .cards__date
+
+		&__date {
+		}
+
+		// .cards__tag
+
+
+		&__text{
+			color: #343434;
+			font-size: 14px;
+			line-height: 22px;
+			transition: all 0.3s ease 0s;
+			margin-top: 20px;
+			padding-right: 25px;
+			overflow: hidden; /* Обрезаем все, что не помещается в область */
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-clamp: 3;
+      box-orient: vertical;
+		}
+
+		&__tag {
+		}
+
+		// .cards__title
+
+		&__title {
+			
+			a{
+				font-size: 22px;
+			line-height: 32px;
+			color: #000;
+			}
+		}
+
+		// .cards__link
+
+		&__link {
+			margin-top: 30px;
+			a{
+				color: #00A377;
+				&::after{
+					content:url(../img/icons/link-arr-gr.svg);
+					
+				}
+			}
+		}
+}
+
+
+//========================================================================================================================================================
+
+
+.pagination {
+	margin-bottom: 20px;
+
+		// .pagination__container
+
+		&__container {
+		}
+
+		// .pagination__row
+
+		&__row {
+			display: flex;
+			max-width: 266px;
+		}
+
+		// .pagination__column
+
+		&__column {
+			display: flex;
+			max-width: 170px;
+			overflow:hidden;
+			text-overflow: ellipsis;
+		}
+
+		// .pagination__item
+
+		&__item {
+			flex: 0 0 auto;
+		}
+
+		// .pagination__lust
+
+		&__lust {
+			margin-left: 5px;
+		}
+
+		// .pagination__arrow
+
+		&__arrow {
+		}
+}
+
