@@ -1,0 +1,143 @@
+//====================================================================================================
+.hww {
+
+		// .hww__container
+
+		&__container {
+		}
+
+		// .hww__row
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width:$md2+px){
+				flex-wrap: wrap;
+			}
+		}
+
+
+		&__column {
+			flex: 0 0 32%;
+			padding: 60px 48px 75px 32px;
+			background: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			@media (max-width:$md2+px){
+				flex: 0 0 100%;
+				margin-bottom: 65px;
+			}
+			&:nth-child(2){
+				.hww__info{	
+					&::before{
+						background: #FAC000;
+						height: 80%;
+						top: 5px;
+					}
+					
+				}
+				.hww__title{
+					span{
+						background: #FAC000;
+						&::before{
+					
+							background: #FAC000;
+						}
+					}	
+				}
+					
+			}
+			&:nth-child(3){
+				.hww__info{
+					&::before{
+						background: #E74545;
+						height: 94%;
+						top: 5px;
+					}
+				}
+				.hww__title{
+					span{
+						background: #E74545;
+						&::before{
+					
+							background: #E74545;
+						}
+					}	
+				}
+			}
+		}
+
+
+		&__title {
+			margin-bottom: 8px;
+			position: relative;
+			span{
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				background: #4299B6;
+				border-radius: 50%;
+				top: -68px;
+				left: 0;
+				&::before{
+					background: #4299B6;
+					-webkit-animation: pulse 1.7s both infinite;
+	        animation: pulse 1.7s both  infinite;
+				}
+			}
+		}
+
+		// .hww__subtitle
+
+		&__subtitle {
+			line-height: 20px;
+			font-size: 12px;
+			color: #A0A0A0;
+			margin-bottom: 20px;
+		}
+
+		// .hww__info
+		&__inner{
+			justify-self: flex-start;
+			max-width: 260px;
+		}
+
+		&__info {
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 700;
+			padding-left: 16px;
+			position: relative;
+			color: #4F4F4F;
+			&::before{
+				content:'';
+				position: absolute;
+				height: 80%;
+				width: 4px;
+				background: #4299B6;;
+				left: 0;
+				top: 5px;
+			}
+		}
+
+		// .hww__coment
+
+		&__coment {
+			margin-top: 30px;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			font-family: Trebuchet MS italic;
+			justify-self: flex-end;
+		}
+		&__note{
+			color: #4f4f4f;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: 400;
+			margin-bottom: 130px;
+		}
+}
+
