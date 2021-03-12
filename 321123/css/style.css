@@ -2048,12 +2048,9 @@ body.ie ._ibg img {
   margin-top: 20px;
   padding-right: 25px;
   overflow: hidden;
-  /* Обрезаем все, что не помещается в область */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  line-clamp: 3;
-  box-orient: vertical;
 }
 
 .cards__title a {
@@ -2220,20 +2217,20 @@ body.ie ._ibg img {
   max-width: 850px;
 }
 
-.post__autor {
+.post__author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.post__autor-image {
+.post__author-image {
   max-width: 51px;
   max-height: 51px;
   border-radius: 50%;
 }
 
-.post__autor-about {
+.post__author-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2245,12 +2242,12 @@ body.ie ._ibg img {
   margin-left: 12px;
 }
 
-.post__autor-name {
+.post__author-name {
   font-size: 16px !important;
   line-height: 18px !important;
 }
 
-.post__autor-position {
+.post__author-position {
   font-family: Trebuchet MS italic;
   color: #00A377;
   margin-top: 7px;
@@ -2258,7 +2255,6 @@ body.ie ._ibg img {
 
 .post__content-block {
   margin-bottom: 45px;
-  background: !important;
 }
 
 .post__content-block img {
@@ -2342,6 +2338,8 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .post__btn:hover {
@@ -2894,9 +2892,111 @@ body.ie ._ibg img {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  line-clamp: 5;
-  box-orient: vertical;
   overflow: hidden;
+}
+
+.author {
+  position: relative;
+}
+
+.author__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 224px;
+  background: #fff;
+  padding: 40px 100px;
+  -webkit-box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
+          box-shadow: 0px 10px 20px rgba(47, 54, 69, 0.1);
+  margin-bottom: 75px;
+}
+
+.author__image {
+  max-width: 144px;
+  max-height: 144px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.author__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.author__position {
+  margin-bottom: 10px;
+}
+
+.author__name {
+  margin-top: 10px;
+}
+
+.author__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.author__post {
+  position: relative;
+}
+
+.author__post-row {
+  max-width: 845px;
+  margin: 0 auto;
+}
+
+.author__post-container {
+  margin: 0 auto;
+}
+
+.author__block {
+  margin: 75px 0px 60px 0px;
+}
+
+.author__block p {
+  margin-bottom: 30px;
+}
+
+.author__citation {
+  background: #fff;
+  padding: 42px 83px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #4f4f44;
+  position: relative;
+  margin-bottom: 170px;
+}
+
+.author__citation::before {
+  content: url(../img/icons/quotes.svg);
+  position: absolute;
+  top: -30px;
+}
+
+.author__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+
+.autor__post {
+  position: relative;
+}
+
+.autor__post .services__pulse ._pulse {
+  width: 240px;
+  height: 240px;
+  left: calc(100% - 120px);
 }
 
 .page {
@@ -3330,6 +3430,16 @@ body.ie ._ibg img {
   .reviews__text {
     max-width: 870px;
   }
+
+  .author__post-row {
+    max-width: 700px;
+  }
+
+  .autor__post .services__pulse {
+    width: 120px;
+    height: 120px;
+    left: calc(100% - 60px);
+  }
 }
 
 @media (max-width: 1130px) {
@@ -3750,6 +3860,14 @@ body.ie ._ibg img {
             flex: 0 0 48%;
   }
 
+  .author__post-row {
+    max-width: 100%;
+  }
+
+  .author__citation {
+    margin-bottom: 70px;
+  }
+
   .breadcrumbs {
     margin: 70px 0 30px 0;
   }
@@ -3978,7 +4096,7 @@ body.ie ._ibg img {
     margin-top: 35px;
   }
 
-  .post__autor {
+  .post__author {
     margin-bottom: 40px;
   }
 
@@ -4024,6 +4142,10 @@ body.ie ._ibg img {
     width: 100%;
     max-height: 300px;
     overflow: hidden;
+  }
+
+  .author__info {
+    padding: 40px 20px;
   }
 
   .page {
@@ -4250,5 +4372,24 @@ body.ie ._ibg img {
 
   .reviews__text {
     padding: 40px 20px;
+  }
+
+  .author__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .author__image {
+    margin: 0 auto;
+  }
+
+  .author__citation {
+    padding: 30px 25px;
   }
 }
