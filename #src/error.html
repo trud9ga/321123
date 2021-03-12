@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="error">
+				<div class='error__container _container'>
+					<div class="error__row">
+						<div class="error__img">
+							<img src="img/icons/404.svg" alt="">
+						</div>
+						<div class="error__column">
+							<div class="error__title _title">Page not found</div>
+							<div class="error__subtitle">This page does not exist. Try to start from the home page.</div>
+							<a href="index.html" class="error__link">Go home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

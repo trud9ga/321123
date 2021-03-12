@@ -301,24 +301,6 @@
 		}
 		&__btn{
 			margin-top: 45px;
-			background: #00A377;
-			width: 200px;
-			height: 43px;
-			color: white;
-			border: 1px solid #00A377;
-			transition: all 0.3s ease 0s;
-			border-radius: 100px;
-			display: flex;
-			justify-content:center;
-			align-items: center;
-			font-size: 16px;
-			font-weight: 700;
-			&:hover{
-				background: white;
-
-			color: #00A377;
-			border: 1px solid #00A377;
-			}
 		}
 }
 

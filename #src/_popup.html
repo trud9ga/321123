@@ -1,15 +1,89 @@
-<div class="popup">
+<div class="popup popup_callback">
 	<div class="popup__content">
-		<div class="popup__body">
+		<div class="popup__body callback__body">
+			<div class="callback__contacts">
+				<div class="callback__title _pp-title">
+					Contact info
+				</div>
+				<div class="callback__email">
+					<a href="mailto:sales@opsworks.com">sales@opsworks.co</a>
+					<a href="mailto:info@opsworks.com">info@opsworks.co</a>
+				</div>
+				<ul class="callback__media">
+					<li><a href="#"><img src="img/popup/popup_media1.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/popup/popup_media2.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/popup/popup_media3.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/popup/popup_media4.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/popup/popup_media5.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<form action="#" class="callback__form">
+
+				<label for="inp" class="_title">
+					<p class="form__label">Apply for two complimentary expert hours</p>
+				</label>
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Name"
+					class="input _req _name">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Email"
+					class="input _email _req">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Comment" class="input">
+				<button type="submit" class="form__btn btn">Send</button>
+			</form>
+			<div class="popup__close"></div>
+		</div>
+
+	</div>
+</div>
+<div class="popup popup_comment">
+	<div class="popup__content">
+		<div class="popup__body comment__body">
+			<div class="comment__title _pp-title">Apply for 2 complimentary DevOps Consulting hours</div>
+			<div class="comment__subtitle">Our experts will recommend how to optimize infrastructure</div>
+			<form action="#" class="comment__form">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Name"
+					class="input _req _name">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Email"
+					class="input _email _req">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Comment" class="input">
+				<button type="submit" class="form__btn btn">Send</button>
+			</form>
 			<div class="popup__close"></div>
 		</div>
 	</div>
 </div>
-<div class="popup popup_video">
+<div class="popup popup_timer">
 	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
+		<div class="popup__body timer__body">
+			<div class="timer__image"><img src="img/popup/time1.png" alt=""></div>
+			<div class="timer__inner">
+				<div class="timer__title">Get two complimentary hours of DevOps expertise</div>
+				<div class="timer__subtitle">Make one more step towards digital transformation</div>
+				<form action="#" class="timer__form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Name"
+						class="input _req _name">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Email"
+						class="input _email _req">
+					<button type="submit" class="form__btn btn">Apply</button>
+				</form>
+			</div>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_subscribe">
+	<div class="popup__content">
+		<div class="popup__body subscribe__body">
+			<div class="subscribe__image"><img src="img/popup/scroll1.png" alt=""></div>
+			<div class="subscribe__inner">
+				<div class="subscribe__title">OpsWorks Co. Newsletter</div>
+				<div class="subscribe__subtitle">Subscribe to our email newsletter for weekly DevOps insights</div>
+				<form action="#" class="subscribe__form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="E-mail address"
+						class="input _email _req">
+					<button type="submit" class="form__btn btn">Subscribe</button>
+				</form>
+			</div>
+			<div class="popup__close"></div>
 		</div>
 	</div>
 </div>
