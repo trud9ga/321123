@@ -1513,11 +1513,12 @@ let slider_clients = new Swiper('.clients__row', {
 		nextEl: '.clients__arrow-next',
 		prevEl: '.clients__arrow-prev',
 	},
+
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-			slidesPerView: 1,
-			spaceBetween: 0
+			slidesPerView: 1.5,
+			spaceBetween: 20
 		},
 		// when window width is >= 480px
 		480: {
@@ -1546,6 +1547,50 @@ let slider_reviews = new Swiper('.reviews__row', {
 		nextEl: '.reviews__arrow-next',
 		prevEl: '.reviews__arrow-prev',
 	},
+
+});
+
+
+let certifications_reviews = new Swiper('.certifications__slider ', {
+	observeParents: true,
+	slidesPerView: 3,
+	spaceBetween: 30,
+	autoHeight: true,
+	speed: 800,
+	loop: true,
+	preloadImages: true,
+	lazy: true,
+	
+	navigation: {
+		nextEl: '.certifications__arrow-next',
+		prevEl: '.certifications__arrow-prev',
+	},
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 2.5,
+			spaceBetween: 15
+		},
+		// when window width is >= 480px
+		480: {
+			slidesPerView: 2.5,
+			spaceBetween: 30
+		},
+		// when window width is >= 640px
+		640: {
+			slidesPerView: 3.5,
+			spaceBetween: 30
+		},
+		991: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		},
+		1442: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		}
+	}
 
 });
 // Dynamic Adapt v.1

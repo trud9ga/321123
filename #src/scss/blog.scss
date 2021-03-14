@@ -165,6 +165,10 @@
 				.cards__text{
 					color: #fff;
 				}
+				._tag{
+					background: #fff;
+					color: #00A377;
+				}
 			}
 		}
 
@@ -208,9 +212,9 @@
 			margin-top: 20px;
 			padding-right: 25px;
 			overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
 		}
 
 		&__tag {

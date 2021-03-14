@@ -1,0 +1,124 @@
+.automated {
+	position: relative;
+	padding: 100px 0px 70px;
+	@media (max-width: $md2+px) {
+		padding: 70px 0px;
+	}
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+
+		margin: 0px 0px 25px 0px;
+
+		@media (max-width: $md1+px) {
+			display: block;
+		}
+	}
+
+	&__column {
+	}
+
+	&__subtitle {
+		margin: 0px 0px 20px 0px;
+		max-width: 650px;
+	}
+
+	&__subtext {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #4f4f4f;
+
+		max-width: 750px;
+	}
+
+	&__img {
+		@media (max-width: $md1+px) {
+			margin: 20px 0px 0px 0px;
+			display: flex;
+			justify-content: center;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__pulse {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		._pulse {
+			position: relative;
+			width: 230px;
+			height: 230px;
+			background: #00a377;
+			border-radius: 50%;
+			left: calc(100% - 355px);
+			top: 0;
+			&::before {
+				content: "";
+				border-radius: 50%;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: #00a377;
+				opacity: 0.8;
+				-webkit-animation: pulse 2.5s both infinite;
+				animation: pulse 2.5s both infinite;
+				-webkit-animation-delay: 1s;
+				animation-delay: 1s;
+				z-index: -1;
+			}
+		}
+		@media (max-width: 1340px) {
+			display: none;
+		}
+	}
+
+	&__body {
+		position: relative;
+	}
+
+	&__title {
+		margin: 0px 0px 25px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #4f4f4f;
+
+		max-width: 940px;
+
+		p {
+			margin: 0px 0px 35px 0px;
+
+			@media (max-width: $md2+px) {
+				margin: 0px 0px 25px 0px;
+			}
+		}
+
+		ol {
+			margin: 0px 0px 35px 0px;
+			@media (max-width: $md2+px) {
+				margin: 0px 0px 25px 0px;
+			}
+		}
+
+		li {
+			margin: 0px 0px 0px 20px;
+		}
+	}
+}

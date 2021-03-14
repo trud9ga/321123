@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 @@include('_head.html',{
 "title":"Post"
 })
@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('_header.html',{})
 		<main class="page">
-			<div class="post">
+			<section class="post">
 				<div class='post__container _container'>
 					<nav class="breadcrumbs">
 						<ul class="breadcrumbs__list">
@@ -192,8 +192,8 @@
 					</div>
 
 				</div>
-			</div>
-			<div class="latest-post">
+			</section>
+			<section class="latest-post">
 				<div class='latest-post__container _container'>
 					<div class="latest-post__title _title">Latest posts</div>
 					<div class="cards__row">
@@ -241,7 +241,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		@@include('_footer.html',{})
 	</div>

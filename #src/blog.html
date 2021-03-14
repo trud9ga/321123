@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 @@include('_head.html',{
 "title":"Blog"
 })
@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('_header.html',{})
 		<main class="page">
-			<div class="tags">
+			<section class="tags">
 				<div class='tags__container _container'>
 					<nav class="breadcrumbs">
 						<ul class="breadcrumbs__list">
@@ -58,8 +58,8 @@
 						</div>
 					</form>
 				</div>
-			</div>
-			<div class="cards">
+			</section>
+			<section class="cards">
 				<div class='cards__container _container'>
 					<div class="cards__row">
 						<div class="cards__column">
@@ -149,8 +149,8 @@
 
 					</div>
 				</div>
-			</div>
-			<div class="pagination">
+			</section>
+			<section class="pagination">
 				<div class='pagination__container _container'>
 					<div class="pagination__row">
 						<div class="pagination__column">
@@ -172,7 +172,7 @@
 					</div>
 
 				</div>
-			</div>
+			</section>
 		</main>
 		@@include('_footer.html',{})
 	</div>

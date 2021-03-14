@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 @@include('_head.html',{
 "title":"About"
 })
@@ -9,19 +9,25 @@
 		@@include('_header.html',{})
 		<main class="page">
 
+			<div class="breadcrumbs ">
+				<div class="breadcrumbs__body _container">
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="index.html" class="breadcrumbs__link">Home</a>
+							</li>
+							<li>
+								<span class="breadcrumbs__item">About us</span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
 			<section class="about">
 				<div class="about__content">
 					<div class="about__container _container">
-						<nav class="breadcrumbs">
-							<ul class="breadcrumbs__list">
-								<li>
-									<a href="index.html" class="breadcrumbs__link">Home</a>
-								</li>
-								<li>
-									<span class="breadcrumbs__item">Case Studies</span>
-								</li>
-							</ul>
-						</nav>
+
 						<div class="about__body">
 							<div class="about__info">
 								<div class="about__title _title">About us</div>
@@ -52,21 +58,26 @@
 								<div class="history__column-team">
 									<img src="img/about/history3.jpg" alt="">
 								</div>
-								<p class="history__text">Our CEO, Artem Dolobanko, made his career path from a System
+								<p class="history__text"> <span class="_pulse"></span>Our CEO, Artem Dolobanko, made his career
+									path from a System
 									Administrator
 									to DevOps Engineer.
 									After his first big contract he founded OpsWorks Co.</p>
-								<p class="history__text">The first to join were his university friends, another DevOps Engineer
+								<p class="history__text"> <span class="_pulse"></span>The first to join were his university
+									friends, another DevOps Engineer
 									and a System
 									Administrator.
 									OpsWorks Co. has been a team ever since.</p>
-								<p class="history__text">OpsWorks Co. team has reduced the maintenance cost of a huge cloud
+								<p class="history__text"> <span class="_pulse"></span> OpsWorks Co. team has reduced the
+									maintenance cost of a huge cloud
 									infrastructure by 40%. The
 									quality work has attracted a lot of new clients since then.</p>
-								<p class="history__text">Today, OpsWorks Co. is a team of 50+ people, a loft office in the Kyiv
+								<p class="history__text"> <span class="_pulse"></span> Today, OpsWorks Co. is a team of 50+
+									people, a loft office in the Kyiv
 									city centre, and a desire to
 									bring digital transformation to the world.</p>
 								<p class="history__text">
+									<span class="_pulse"></span>
 									Are you in?
 								</p>
 							</div>
@@ -91,7 +102,10 @@
 						<div class="together__column">
 							<div class="together__column-title">2 years</div>
 							<div class="together__column-text">The DebOps society has know us for 2 years already. We are
-								recognized at Crunbase, Clitch, Sourceseek, Upwork, and Angelist</div>
+								recognized at <span>Crunbase</span>, <span> Clitch</span>, <span>Sourceseek</span>,
+								<span>Upwork</span>, and
+								<span>Angelist</span>
+							</div>
 						</div>
 						<div class="together__column">
 							<div class="together__column-title">50+ People</div>

@@ -1,0 +1,77 @@
+.support {
+	padding: 170px 0px 80px 0px;
+	@media (max-width: $md2+px) {
+		padding: 120px 0px 0px 0px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 90px 0px 0px 0px;
+	}
+
+	&__container {
+	}
+}
+
+//========================================================================================================================================================
+.maintenance {
+	padding: 20px 0px 170px;
+
+	&__container {
+	}
+}
+
+//========================================================================================================================================================
+.expertise {
+	position: relative;
+	padding: 170px 0px 70px;
+	@media (max-width: $md2+px) {
+		padding: 120px 0px 70px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 90px 0px 20px;
+	}
+	&__container {
+	}
+
+	&__title {
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		margin: 0px 45px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	&__text {
+		max-width: 640px;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #4f4f4f;
+
+		p {
+			margin: 0px 0px 35px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__image {
+		@media (max-width: $md2+px) {
+			display: none;
+		}
+		img {
+			object-fit: cover;
+			max-width: 100%;
+		}
+	}
+}
